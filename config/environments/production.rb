@@ -90,4 +90,15 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: 'http://calm-wave-89845.herokuapp.com' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :authentication => :plain,
+      :address => "smtp.mailgun.org",
+      :port => 587,
+      :domain => "sandbox18196ae923984f89a586b0ce507121db.mailgun.org",
+      :user_name => "postmaster@sandbox18196ae923984f89a586b0ce507121db.mailgun.org",
+      :password => "ca1c963cd76d4d283fe6e57c8b57dbaf"
+  }
+
 end
