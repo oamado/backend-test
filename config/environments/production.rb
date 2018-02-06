@@ -93,12 +93,11 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      :authentication => :plain,
       :address => "smtp.mailgun.org",
       :port => 587,
-      :domain => "sandbox18196ae923984f89a586b0ce507121db.mailgun.org",
-      :user_name => "postmaster@sandbox18196ae923984f89a586b0ce507121db.mailgun.org",
-      :password => "ca1c963cd76d4d283fe6e57c8b57dbaf"
+      :domain => "mg.omgo.co",
+      :user_name => "postmaster@mg.omgo.co",
+      :password => "e24d08c844ddf1292ca6a03c4c37e23e"
   }
 
 end
