@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is builded with Ruby on Rails.
 
-Things you may want to cover:
+It uses for authentication devise gem.
+THis gem handle the  sign in, sign up and email validation
 
-* Ruby version
+The database for production is postgres. For development is Sqlite
 
-* System dependencies
+The routes for the users CRUD are:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Verb   | Resource         | Description   |
+|--------|------------------|---------------|
+| GET    | /users           | Get all users |
+| GET    | /users/new       | Form for new user |
+| POST   | /users           | create a user |
+| GET    | /users/{id}      | Get the detailed info for a user |
+| GET    | /users/{id}/edit | Get the edit form  |
+| PUT    | /users/{id}      | Update the user  |
+| DELETE | /users/{id}      | delete the user    |
